@@ -13,9 +13,12 @@ public class Hero {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
     private int posX;
     private int posY;
-
     private String name;
     private String race;
     private String gender;
@@ -39,6 +42,27 @@ public class Hero {
     private String notes;
 
     public Hero(){
+    }
+
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getId(){
+        return this.id;
+    }
+
+    public void setUser(User user){
+        this.user=user;
+    }
+    public User getUser(){
+        return this.user;
+    }
+
+    public void setGender(String gender){
+        this.gender=gender;
+    }
+    public String getGender(){
+        return this.gender;
     }
 
     public String getName() {
