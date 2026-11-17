@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(68, 66, 63);
+    
+
+    transition: background-color 0.5s ease-in-out ;
+}
+body.newBG{
+    background-color: rgb(179, 164, 137);
+}
+
+.log {
+    
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 66, 63);
+
+    width: 500px;
+    min-height: 400px;
+    border-radius: 10px;
+    color: white;
+    border-color: rgb(151, 6, 6);
+    border-style: groove;
+    box-shadow: -3px 10px 50px  rgb(230, 226, 226);
+    gap: 20px;
+}
+
+.log.logBACK{
+    background-color: rgb(179, 164, 137);
+    box-shadow: -3px 10px 50px  rgb(0, 0, 0);
+}
+
+
+
+button {
+    width: 150px;
+    height: 80px;
+    border-style: double;
+    border-radius: 10px;
+    border-color: rgb(158, 15, 5);
+    transition: 0.7s;
+    margin-bottom: 1px;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+#InLog {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#error {
+    display: none;
+}
+
+#lightDark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+h1 {
+    -webkit-text-stroke: 1px;
+    color: white;
+}
+h1.newText {
+    color: black;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  
+    align-items: center;  
+}
+
+#main img {
+    width: 100px;
+}
+
+
+#error {
+    color: white;
+}
+#error.newText {
+    color: black;
+}
