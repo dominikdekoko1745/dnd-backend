@@ -305,6 +305,17 @@ header input {
     margin: 0;
     margin-bottom: 5px;
 }
+
+#PhysiqueCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
 #PhysiqueSavethrowBtn{
     border-radius: 50%;
     width: 20px;
@@ -346,7 +357,15 @@ header input {
 }
 
 
-
+#IntelligenceCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 
 
 #characterStatIntelligence {
@@ -434,6 +453,23 @@ header input {
     border-right: 0px;
 }
 
+
+#DexteritySecrecy {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#DexteritySecrecy input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
 #IntelligenceMagic {
     display: flex;
     align-items: center;
@@ -513,7 +549,12 @@ header input {
     margin-left: 10px;  
 }
 
-
+#DexteritySecrecyBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
 
 
 
@@ -1012,7 +1053,7 @@ main {
     align-items: center;
     border-style:groove ;
     height: 100px;
-    width: 160px;
+    width: 122px;
     border-width: 10px;
 }
 
@@ -1036,7 +1077,7 @@ main {
     border-left:0 ;
     border-right: 0;
     border-width: 5px;
-    width: 720px;
+    width: 670px;
     justify-content: center;
 
 }
@@ -1045,7 +1086,7 @@ main {
     flex-direction: column;
     align-items: center;
     border-style: groove;
-
+    width: 660px;
 }
 #combat-plotsANDweapon_Name, #bonus-difficult, #damage {
     border-style: groove;
@@ -1056,10 +1097,14 @@ main {
 
 #combat-plotsANDweapon_Name input, #bonus-difficult input, #damage input, #note input {
     height: 30px;
+    width: 150px;
 }
 #notePlace {
-    width: 720px;
+    width: 650px;
     border-style: groove;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0 ;
     min-height: 100px;
     border-top: 0;
     display: flex;
@@ -1068,7 +1113,7 @@ main {
 
 #combat-plotsANDweapon_Name_note, #bonus-difficult_note,#damage_note, #note_note{
     border-style: groove;
-    width: 180px;
+    width: 181px;
     overflow-wrap: break-word;
     word-break: break-word;
     display: flex;
@@ -1107,7 +1152,7 @@ main {
 
 
 #skillsANDabilities {
-    width: 98%;
+    width: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1126,7 +1171,7 @@ main {
     width: 100%;
 }
 #skillsANDabilities_input {
-    width: 90%;
+    width: 86%;
     height: 40px;
     font-size: 20px;
 }
@@ -1221,7 +1266,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-style: groove;
-    width: 370px;
+    width: 320px;
     font-size: 23px;
     border-width: 10px;
 }
@@ -1230,7 +1275,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-style: groove;
-    width: 370px;
+    width: 320px;
     font-size: 23px;
     border-width: 10px;
 
@@ -1238,7 +1283,7 @@ body {
 
 #features_input, #attackANDspell_input {
     height: 30px;
-    width: 300px;
+    width: 250px;
 }
 
 #features_BTN, #attackANDspell_BTN {
@@ -1248,7 +1293,7 @@ body {
 #features_note, #attackANDspell_note {
     border-style: groove;
     min-height: 550px;
-    width: 369px;
+    width: 100%;
     background-image: url(kletka.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -1325,13 +1370,13 @@ body {
     align-items: center;
     border-style: groove;
     border-width: 10px;
-    width: 760px;
+    width: 660px;
 } 
 #AliceAndOrgfeatures_name p{
     font-size: 23px;
 }
 #AliceAndOrg_INP-BTN input{
-    width: 680px;
+    width: 580px;
     height: 45px;
     font-size: 15px;
 }
@@ -1407,7 +1452,7 @@ body {
     align-items: center;
     border-style: groove;
     border-width: 10px;
-    width: 760px;
+    width: 660px;
 }
 #treasures {
     display: flex;
@@ -1415,7 +1460,7 @@ body {
     align-items: center;
     border-style: groove;
     border-width: 10px;
-    width: 760px;
+    width: 660px;
 }
 #additional_skills_note {
     width: 100%;
@@ -1451,7 +1496,7 @@ body {
 }
 
 #treasures_INP-BTN input{
-    width: 680px;
+    width: 580px;
     height: 45px;
     font-size: 15px;
 }
@@ -1461,7 +1506,7 @@ body {
 }
 
 #additional_skills_INP-BTN input{
-    width: 680px;
+    width: 580px;
     height: 45px;
     font-size: 15px;
 }
@@ -1484,7 +1529,7 @@ body {
     font-size: 15px;
 }
 #goal_note {
-        width: 100%;
+    width: 100%;
     min-height: 900px;
     background-image: url(kletka.png);
     background-position: center;
@@ -1497,3 +1542,446 @@ body {
     border-bottom: 0;
 }
 
+#firstNote_name {
+    font-size: 23px;
+}
+
+#firstNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#firstNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#firstNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#firstNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+
+
+#secondNote_name {
+    font-size: 23px;
+}
+
+#secondNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#secondNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#secondNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#secondNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+#box3 {
+    display: flex;
+}
+
+
+
+#thirdNote_name {
+    font-size: 23px;
+}
+
+#thirdNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#thirdNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#thirdNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#thirdNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+
+
+#fourNote_name {
+    font-size: 23px;
+}
+
+#fourNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#fourNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#fourNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#fourNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+#box4 {
+    display: flex;
+}
+
+
+
+
+#fiveNote_name {
+    font-size: 23px;
+}
+
+#fiveNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#fiveNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#fiveNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#fiveNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+
+
+#sixNote_name {
+    font-size: 23px;
+}
+
+#sixNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#sixNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#sixNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#sixNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+#box5 {
+    display: flex;
+}
+
+#characteristicINP{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#characteristicNAME {
+    font-size: 15px;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#firstConteiner {
+    display: flex;
+    flex-direction: column;
+    border-width: 10px;
+    border-style: groove;
+    width: 230px;
+    height: 230px;
+}
+
+.firstFL, .secondFL, .thirdFL {
+    display: flex;
+    border-style: groove;
+
+}
+.firstFL p, .secondFL p, .thirdFL p {
+    font-size: 15px;
+    gap: 10px;
+}
+.value {
+    height: 50px;
+    border-style: groove;
+    width: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.size-specification {
+    display: flex;
+}
+
+#sizePlace p {
+    text-decoration: underline;
+    margin: 0;
+}
+#sizeINP {
+    width: 80px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#sizePlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 90px;
+}
+
+#load-capacityPlace p {
+     text-decoration: underline;
+     margin: 0;
+ }
+#load-capacityINP {
+    width: 120px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#load-capacityPlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 130px;
+}
+
+
+
+#jumpVPlace p {
+    text-decoration: underline;
+    margin: 0;
+}
+#jumpVINP {
+    width: 50px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#jumpVPlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 80px;
+}
+
+
+
+#jumpDPlace p {
+    text-decoration: underline;
+    margin: 0;
+}
+#jumpDINP {
+    width: 50px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#jumpDPlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 80px;
+}
+
+footer {
+    display: flex;
+}
+
+#FooterLeftSide {
+    display: flex;
+}
+
+.plusANDminus {
+    display: flex;
+    flex-direction: column;
+}
+.plusANDminus button{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 1px;
+    border-style: groove;
+    border-bottom: 0;
+    border-top: 0;
+    border-width: 2px;
+    border-left: 0;
+}
+
+.buttonPLACE button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right:3px ;
+
+}
+
+.MainCOl {
+    display: flex;
+    gap: 15px;
+}
+
+#HowSkillsPLace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 10px;
+    border-style: groove;
+
+
+}
+.nameP {
+    border-style: groove;
+    border-width: 4px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

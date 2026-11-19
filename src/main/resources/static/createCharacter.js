@@ -71,6 +71,21 @@ document.addEventListener("DOMContentLoaded", function() {
     let imageInput = document.getElementById("imageInput");
     let characterImage = document.getElementById("characterImage");
 
+
+    let firstNote_input  = document.getElementById("firstNote_input")
+    let secondNote_input  = document.getElementById("secondNote_input")
+    let thirdNote_input  = document.getElementById("thirdNote_input")
+    let fourNote_input  = document.getElementById("fourNote_input")
+    let fiveNote_input =  document.getElementById("fiveNote_input")
+    let sixNote_input =  document.getElementById("sixNote_input")
+
+    let firstNote_BTN = document.getElementById("firstNote_BTN")
+    let secondNote_BTN = document.getElementById("secondNote_BTN")
+    let thirdNote_BTN = document.getElementById("thirdNote_BTN")
+    let fourNote_BTN = document.getElementById("fourNote_BTN")
+    let fiveNote_BTN = document.getElementById("fiveNote_BTN")
+    let sixNote_BTN = document.getElementById("sixNote_BTN")
+
     addWeaponButton.addEventListener("click", function() {
 
         if (weaponNameInput.value !== "" && weaponBonusInput.value !== "" && weaponDamageInput.value !== "" && weaponNotesInput.value !== "") {
@@ -318,5 +333,93 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     } 
     })
+
+    treasures_BTN.addEventListener("click", function () {
+        if (treasures_INP.value !== "") {
+            let treasures_boxy = document.createElement("div")
+            treasures_boxy.classList.add("treasures-BOX")
+            let treasures_pp = document.createElement("p")
+            treasures_note.appendChild(treasures_boxy)
+            treasures_pp.textContent = treasures_INP.value;
+            treasures_boxy.appendChild(treasures_pp)
+            treasures_INP.value = "";
+
+
+            let treasures_Btn_delete = document.createElement("button")
+            treasures_Btn_delete.textContent = "❌"
+            treasures_Btn_delete.classList.add("treasures_BTN")
+            treasures_boxy.appendChild(treasures_Btn_delete)
+            treasures_Btn_delete.addEventListener("click", function(){
+                treasures_boxy.remove()
+            })
+        }
+    })
+
+    treasures_BTN.addEventListener("click", function () {
+        if (treasures_INP.value !== "") {
+            let treasures_boxy = document.createElement("div")
+            treasures_boxy.classList.add("treasures-BOX")
+            let treasures_pp = document.createElement("p")
+            treasures_note.appendChild(treasures_boxy)
+            treasures_pp.textContent = treasures_INP.value;
+            treasures_boxy.appendChild(treasures_pp)
+            treasures_INP.value = "";
+
+
+            let treasures_Btn_delete = document.createElement("button")
+            treasures_Btn_delete.textContent = "❌"
+            treasures_Btn_delete.classList.add("treasures_BTN")
+            treasures_boxy.appendChild(treasures_Btn_delete)
+            treasures_Btn_delete.addEventListener("click", function(){
+                treasures_boxy.remove()
+            })
+        }
+    })
+
+
+    treasures_BTN.addEventListener("click", function () {
+        if (treasures_INP.value !== "") {
+            let treasures_boxy = document.createElement("div")
+            treasures_boxy.classList.add("treasures-BOX")
+            let treasures_pp = document.createElement("p")
+            treasures_note.appendChild(treasures_boxy)
+            treasures_pp.textContent = treasures_INP.value;
+            treasures_boxy.appendChild(treasures_pp)
+            treasures_INP.value = "";
+
+
+            let treasures_Btn_delete = document.createElement("button")
+            treasures_Btn_delete.textContent = "❌"
+            treasures_Btn_delete.classList.add("treasures_BTN")
+            treasures_boxy.appendChild(treasures_Btn_delete)
+            treasures_Btn_delete.addEventListener("click", function(){
+                treasures_boxy.remove()
+            })
+        }
+    })
+
+
+
+    treasures_BTN.addEventListener("click", function () {
+        if (treasures_INP.value !== "") {
+            let treasures_boxy = document.createElement("div")
+            treasures_boxy.classList.add("treasures-BOX")
+            let treasures_pp = document.createElement("p")
+            treasures_note.appendChild(treasures_boxy)
+            treasures_pp.textContent = treasures_INP.value;
+            treasures_boxy.appendChild(treasures_pp)
+            treasures_INP.value = "";
+
+
+            let treasures_Btn_delete = document.createElement("button")
+            treasures_Btn_delete.textContent = "❌"
+            treasures_Btn_delete.classList.add("treasures_BTN")
+            treasures_boxy.appendChild(treasures_Btn_delete)
+            treasures_Btn_delete.addEventListener("click", function(){
+                treasures_boxy.remove()
+            })
+        }
+    })
+
 
 });
