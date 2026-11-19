@@ -25,7 +25,3 @@ public class UserController {
         }
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> main
