@@ -18,7 +18,7 @@ public class HeroService {
         return heroRepository.save(hero);
     }
 
-    public List<Hero> getListOfHeroes(){
-        return heroRepository.findAll();
+    public List<Hero> getHeroesByUserId(Long userId){
+        return heroRepository.findByUserId(userId);
     }
 }
