@@ -5,6 +5,7 @@ import com.kurbanov.dnd_backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -15,7 +16,19 @@ public class UserService {
     }
 
     public User register(User user) {
-        return userRepository.save(user);
+        Optional<User> optionalUser = userRepository.findByUsername(user.getUsername());
+        if (optionalUser.isPresent()) {
+            throw new RuntimeException("Логин с таким именем уже существует");
+        } else {return userRepository.save(user);}
     }
 
+    public User login(String username, String password) {
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isEmpty()) {throw new RuntimeException("Вы не ввели логин или пароль");}
+        User foundUser = user.get();
+        if (foundUser.getPassword().equals(password)) {
+            return foundUser;
+        } else {throw new RuntimeException("Неверный логин или пароль");}
+    }
 }
+

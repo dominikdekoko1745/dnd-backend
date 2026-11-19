@@ -4,8 +4,6 @@ import com.kurbanov.dnd_backend.model.User;
 import com.kurbanov.dnd_backend.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/api/users")
 @CrossOrigin
@@ -15,21 +13,20 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
-    @PostMapping
+
+    @PostMapping("/register")
     public User createUser(@RequestBody User user) {
         return userService.register(user);
     }
-    /*/честно в душе не чаю как сделать login, я не понимаю где должна быть логика, как методы должны вызываться
-    до сих пор не понимаю что делают:
-    private final UserService userService;
-    public UserController(UserService userService) {
-        this.userService = userService;
+
+    @PostMapping("/login")
+    public User loginUser(@RequestBody User loginData) {
+        return userService.login(loginData.getUsername(), loginData.getPassword());
+        }
     }
 
-    private final UserService userService;
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }/*/
+    /*
+    так теперь насчет логики пользователей
+    мы же будем работать с json файлами, так вот как я буду достовать с json файла нужные значения и сопоставлсять с User
+    */
 
-
-}
