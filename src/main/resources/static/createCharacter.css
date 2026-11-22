@@ -1,0 +1,1987 @@
+
+header {
+    display: flex;
+}
+header input {
+    height: 20px;
+
+}
+#firstFloor {
+    margin-top: 5px;
+}
+#secondFloor {
+    display: flex;
+    margin: 0;
+    gap: 5px;
+}
+#thirdFloor {
+    display: flex;
+    margin: 0;
+    gap: 5px;
+
+}
+#namePlace {
+
+    border-style: groove;
+    border-width: 10px;
+    font-size: 12px;
+}
+#namePlace input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#characterName {
+    width: 350px;
+}
+#lvlPlace {
+    border-radius: 50%;
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-width: 10px;
+    width: 170px;
+}
+#characterLVL {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 40px;
+    width: 50px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+#characterStatStrength {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 180px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+}
+#characterStatStrength h2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#StrengthInputs{
+    display: flex;
+    align-items: center;
+
+}
+#StrengthSavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 2px;
+    border-style: groove;
+    width: 180px;
+}
+#StrengthAthletics {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#StrengthAthletics input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#StrengthCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#StrengthSquer input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+}
+#StrengthCircleMain p {
+    font-size: 10px;
+}
+#StrengthSquerMain {
+    font-size: 10px;
+}
+#StrengthSavethrowBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#StrengthSavethrow input {
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#StrengthAthleticsBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+
+
+#ProficiencyBonus {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 180px;
+    height: 100px;
+    border-style: groove;
+}
+#ProficiencyBonus h2{
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 0;
+}
+#InProficiencyBonus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+#StrengthSquerMain input{
+    border-radius: 10px;
+    border-width: 1px;
+}
+#InProficiencyBonus input {
+    width: 40px;
+    border: 0;
+    font-size: 30px;
+}
+
+
+
+
+#DexterityInputs{
+    display: flex;
+    align-items: center;
+
+}
+
+#DexterityCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#DexteritySquer input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+}
+#DexterityCircleMain p {
+    font-size: 10px;
+}
+#DexteritySquerMain {
+    font-size: 10px;
+}
+
+#characterStatDexterity {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 180px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+}
+#characterStatDexterity h2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#DexteritySavethrowBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#DexteritySavethrow input {
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#DexteritySavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 2px;
+    border-style: groove;
+    width: 180px;
+}
+
+#DexterityAcrobatic {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#DexterityAcrobatic input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+} 
+#DexterityAthleticsBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+
+}
+#DexteritySquerMain input{
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+
+#DexteritySleight_of_hand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#DexteritySleight_of_hand input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+} 
+#DexteritySleight_of_handBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+
+#characterStatPhysique {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 180px;
+    height: 155px;
+    justify-content: center;
+    align-items: center;
+}
+#characterStatPhysique h2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#PhysiqueCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#PhysiqueSavethrowBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#PhysiqueSavethrow input {
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#PhysiqueSavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 2px;
+    border-style: groove;
+    width: 180px;
+}
+#PhysiqueInputs {
+    display: flex;
+    align-items: center;
+}
+
+#PhysiqueCircleMain p {
+    font-size: 10px;
+}
+#PhysiqueSquerMain p {
+    font-size: 10px;
+}
+#PhysiqueSquer input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+
+#IntelligenceCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+#characterStatIntelligence {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 180px;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+}
+#characterStatIntelligence h2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#IntelligenceSavethrowBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#IntelligenceSavethrow input {
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#IntelligenceSavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 2px;
+    border-style: groove;
+    width: 180px;
+}
+#IntelligenceInputs {
+    display: flex;
+    align-items: center;
+}
+
+#IntelligenceCircleMain p {
+    font-size: 10px;
+}
+#IntelligenceSquerMain p {
+    font-size: 10px;
+}
+#IntelligenceSquer input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+
+#IntelligencePerception {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#IntelligencePerception input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#IntelligenceStory {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#IntelligenceStory input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+#DexteritySecrecy {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#DexteritySecrecy input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+#IntelligenceMagic {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#IntelligenceMagic input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#IntelligenceNature {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#IntelligenceNature input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#IntelligenceReligion {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#IntelligenceReligion input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#IntelligencePerceptionBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#IntelligenceStoryBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#IntelligenceMagicBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#IntelligenceNatureBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#IntelligenceReligionBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#DexteritySecrecyBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+
+#characterStatWisdom {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 180px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+}
+#characterStatWisdom h2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#WisdomSavethrowBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#WisdomSavethrow input {
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#WisdomSavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 2px;
+    border-style: groove;
+    width: 180px;
+}
+#WisdomInputs {
+    display: flex;
+    align-items: center;
+}
+
+#WisdomCircleMain p {
+    font-size: 10px;
+}
+#WisdomSquerMain p {
+    font-size: 10px;
+}
+#WisdomSquer input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+#WisdomPerception {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#WisdomPerception input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#WisdomSurvival {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#WisdomSurvival input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#WisdomMedicine {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#WisdomMedicine input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#WisdomInsight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+    
+}
+#WisdomInsight input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#WisdomAnimal_care {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#WisdomAnimal_care input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#WisdomSavethrowBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#WisdomPerceptionBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#WisdomSurvivalBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#WisdomInsightBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+#WisdomMedicineBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;      
+}
+#WisdomAnimal_careBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#WisdomCircleMain p {
+    font-size: 10px;
+}
+#WisdomCircleMainp {
+    font-size: 10px;
+}
+#WisdomCircleMain input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+#WisdomCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+#characterStatCharisma {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    width: 180px;
+    height: 410px;
+    justify-content: center;
+    align-items: center;
+}
+#characterStatCharisma h2{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+#CharismaSavethrowBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#CharismaSavethrow input {
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+#CharismaSavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 2px;
+    border-style: groove;
+    width: 180px;
+}
+#CharismaInputs {
+    display: flex;
+    align-items: center;
+}
+
+#CharismaCircleMain p {
+    font-size: 10px;
+}
+#CharismaSquerMain p {
+    font-size: 10px;
+}
+#CharismaSquer input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+#CharismaSavethrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#CharismaSavethrow input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#CharismaPerformance {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#CharismaPerformance input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#CharismaIntimidation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#CharismaIntimidation  input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#CharismaDeception {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+    
+}
+#CharismaDeception input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#CharismaBelief {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+}
+#CharismaBelief input{
+    width: 20px;
+    height: 20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#CharismaSavethrowBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#CharismaPerformanceBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#CharismaIntimidationBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+
+#CharismaDeceptionBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;  
+}
+#CharismaBeliefBtn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+    margin-left: 10px;      
+}
+
+#CharismaCircleMain p {
+    font-size: 10px;
+}
+#CharismaCircleMain p {
+    font-size: 10px;
+}
+#CharismaCircleMain input{
+    height: 25px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+#CharismaCircle {
+    display: flex;
+    border-style: groove;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+#characterStatPlace {
+    display: flex;
+    
+}
+#first {
+    display: flex;
+    flex-direction: column;
+}
+#second {
+    display: flex;
+    flex-direction: column;
+}
+
+#armorPlace{
+    display: flex;
+    align-items: center;
+    gap: 5px;  
+
+}
+#gunPlace {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#armorPlace button{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+#gunPlace button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;  
+}
+#armorPlace h3 {
+    font-size: 15px;
+}
+#gunPlace h3 {
+    font-size: 15px;
+}
+#armorPlace p {
+    font-size: 13px;
+}
+#gunPlace p {
+    font-size: 13px;
+}
+#characterEquipment-Skills h2 {
+    font-size: 20px;
+}
+
+#characterEquipment-Skills {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    border-width: 10px;
+    width: 365px;
+}
+#Armor-Gun {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px;
+    border-style: groove;
+}
+#blocknote  {
+    height: 74px;
+}
+
+.Boxy1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-left:5px ;
+}
+
+#blocknote1 {
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+}
+#readyBTN {
+    width: 20px;
+    height: 20px;
+}
+
+
+main {
+    display: flex;
+    gap: 20px;
+}
+#characterInitiative {
+    display: flex;
+        gap: 10px;
+}
+#initiative, #speed, #perception, #state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style:groove ;
+    height: 100px;
+    width: 122px;
+    border-width: 10px;
+}
+
+#initiative input, #speed input, #perception input, #state input{
+    height: 70px;
+    margin-bottom: 5px;
+    width: 60px;
+    font-size: 35px;
+    border: 0;
+}
+#state {
+    width: 200px;
+}
+#state input {
+    width: 180px;
+}
+
+#combat-plotsANDweapon_Box {
+    display: flex;
+    border-style: groove;
+    border-left:0 ;
+    border-right: 0;
+    border-width: 5px;
+    width: 670px;
+    justify-content: center;
+
+}
+#combat-plotsANDweapon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    width: 660px;
+}
+#combat-plotsANDweapon_Name, #bonus-difficult, #damage {
+    border-style: groove;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+#combat-plotsANDweapon_Name input, #bonus-difficult input, #damage input, #note input {
+    height: 30px;
+    width: 150px;
+}
+#notePlace {
+    width: 650px;
+    border-style: groove;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0 ;
+    min-height: 100px;
+    border-top: 0;
+    display: flex;
+    
+}
+
+#combat-plotsANDweapon_Name_note, #bonus-difficult_note,#damage_note, #note_note{
+    border-style: groove;
+    width: 181px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+}
+#combat-plotsANDweapon {
+    position: relative;
+    border-radius: 10px;
+    border-width: 10px;
+} 
+
+#readyBAT {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+
+#pp1BTN ,#pp2BTN,#pp3BTN,#pp4BTN {
+    background-color: rgba(240, 248, 255, 0);
+    border: 0;
+}
+
+
+.boxa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#boxList {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+#skillsANDabilities {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:20px;
+    border-style: groove;
+    border-width: 10px;
+}
+#skillsANDabilities_headName {
+    border-style: groove;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#skillsANDabilities_input_place {
+    width: 100%;
+}
+#skillsANDabilities_input {
+    width: 86%;
+    height: 40px;
+    font-size: 20px;
+}
+#readyBAT {
+    height: 30px;
+    border-radius: 10px;
+}
+#rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#skillsANDabilities_BTN {
+    width: 60px;
+    height: 40px;
+}
+#skillsANDabilities_notePlace {
+    border-style: groove;
+    width: 100%;
+    border-radius: 10px;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-attachment:scroll;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    
+}
+.Boxy1 {
+        overflow-wrap: break-word;
+    word-break: break-word;
+}
+.boxa {
+        overflow-wrap: break-word;
+    word-break: break-word;    
+}
+.SandA-BOX{
+            overflow-wrap: break-word;
+    word-break: break-word; 
+}
+.aANDs-BOX {
+            overflow-wrap: break-word;
+    word-break: break-word;     
+}
+#boxList {
+    width: 100%;
+    border-style: groove;
+    min-height:300px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 810px;
+    background-attachment:local;
+}
+
+#leftSide {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SandA-BOX {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.SANDA_BTN {
+    width: 30px;
+    height: 30px;
+}
+
+
+#AandSandF {
+    display: flex;
+}
+
+
+#attackANDspell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    width: 320px;
+    font-size: 23px;
+    border-width: 10px;
+}
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    width: 320px;
+    font-size: 23px;
+    border-width: 10px;
+
+}
+
+#features_input, #attackANDspell_input {
+    height: 30px;
+    width: 250px;
+}
+
+#features_BTN, #attackANDspell_BTN {
+    height: 30px;
+}
+
+#features_note, #attackANDspell_note {
+    border-style: groove;
+    min-height: 550px;
+    width: 100%;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+}
+
+.aANDs-BOX {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.AANDS_BTN {
+    width: 30px;
+    height: 30px;
+}
+.F-BOX {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;    
+}
+.F_BTN {
+    width: 30px;
+    height: 30px;    
+}
+
+
+#characterImagePlace {
+    display: flex;
+    flex-direction: column;
+}
+#characterImagePlace img{
+    width: 250px;
+    height: 300px;
+}
+#characterImage {
+    display: none;
+    border-width: 10px;
+    border-style: groove;
+}
+
+#characterImageMain{
+    display: flex;
+    align-items: center;
+    width: 369px;
+    flex-direction: column;
+    border-style: groove;
+    border-width: 10px;
+    min-height: 500px;
+    gap: 30px;
+    
+}
+
+#box1 {
+    display: flex;
+    gap: 15px;
+}
+
+#skillsANDabilities_notePlace {
+        overflow-wrap: break-word;
+    word-break: break-word;  
+}
+
+
+#AliceAndOrg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 660px;
+} 
+#AliceAndOrgfeatures_name p{
+    font-size: 23px;
+}
+#AliceAndOrg_INP-BTN input{
+    width: 580px;
+    height: 45px;
+    font-size: 15px;
+}
+#AliceAndOrg_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+#AliceAndOrg_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 810px;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.AliceAndOrg-BOX {
+    display: flex;
+    overflow-wrap: break-word;
+    word-break: break-word;  
+    align-items: center;
+    gap: 10px;
+}
+.additional_skills-BOX {
+    display: flex;
+    overflow-wrap: break-word;
+    word-break: break-word;  
+    align-items: center;
+    gap: 10px;
+}
+.treasures-BOX {
+    display: flex;
+    overflow-wrap: break-word;
+    word-break: break-word;  
+    align-items: center;
+    gap: 10px;    
+}
+.goal-BOX {
+    display: flex;
+    overflow-wrap: break-word;
+    word-break: break-word;  
+    align-items: center;
+    gap: 10px;
+}
+.AliceAndOrg_BTN {
+    height: 30px;
+}
+
+#box2 {
+    display: flex;
+    gap: 13px;
+}
+
+#goal {
+    display: flex;
+    align-items: center;
+    width: 369px;
+    flex-direction: column;
+    border-style: groove;
+    border-width: 10px;
+    min-height: 500px;
+    gap: 30px;
+}
+
+#additional_skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 660px;
+}
+#treasures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 660px;
+}
+#additional_skills_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 810px;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#treasures_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 810px;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#additional_skills_name p{
+    font-size: 23px;
+}
+#treasures_name p{
+    font-size: 23px;
+}
+
+#treasures_INP-BTN input{
+    width: 580px;
+    height: 45px;
+    font-size: 15px;
+}
+#treasures_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#additional_skills_INP-BTN input{
+    width: 580px;
+    height: 45px;
+    font-size: 15px;
+}
+#additional_skills_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+#goal_name {
+    font-size: 23px;
+}
+
+#goal_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#goal_INP-BTN input{
+    width: 300px;
+    height: 45px;
+    font-size: 15px;
+}
+#goal_note {
+    width: 100%;
+    min-height: 900px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+#firstNote_name {
+    font-size: 23px;
+}
+
+#firstNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#firstNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#firstNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#firstNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+
+
+#secondNote_name {
+    font-size: 23px;
+}
+
+#secondNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#secondNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#secondNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#secondNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+#box3 {
+    display: flex;
+}
+
+
+
+#thirdNote_name {
+    font-size: 23px;
+}
+
+#thirdNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#thirdNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#thirdNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#thirdNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+
+
+#fourNote_name {
+    font-size: 23px;
+}
+
+#fourNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#fourNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#fourNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#fourNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+#box4 {
+    display: flex;
+}
+
+
+
+
+#fiveNote_name {
+    font-size: 23px;
+}
+
+#fiveNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#fiveNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#fiveNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#fiveNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+
+
+#sixNote_name {
+    font-size: 23px;
+}
+
+#sixNote_INP-BTN button {
+    width: 55px;
+    height: 40px;
+}
+
+#sixNote_INP-BTN input{
+    width: 440px;
+    height: 45px;
+    font-size: 15px;
+}
+#sixNote_note {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(kletka.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:local;
+    border-style: groove;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+#sixNote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    border-width: 10px;
+    width: 520px;
+    min-height: 300px;
+}
+
+#box5 {
+    display: flex;
+}
+
+#characteristicINP{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#characteristicNAME {
+    font-size: 15px;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+#firstConteiner {
+    display: flex;
+    flex-direction: column;
+    border-width: 10px;
+    border-style: groove;
+    width: 230px;
+    height: 230px;
+}
+
+.firstFL, .secondFL, .thirdFL {
+    display: flex;
+    border-style: groove;
+
+}
+.firstFL p, .secondFL p, .thirdFL p {
+    font-size: 15px;
+    gap: 10px;
+}
+.value {
+    height: 50px;
+    border-style: groove;
+    width: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.size-specification {
+    display: flex;
+}
+
+#sizePlace p {
+    text-decoration: underline;
+    margin: 0;
+}
+#sizeINP {
+    width: 80px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#sizePlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 90px;
+}
+
+#load-capacityPlace p {
+     text-decoration: underline;
+     margin: 0;
+ }
+#load-capacityINP {
+    width: 120px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#load-capacityPlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 130px;
+}
+
+
+
+#jumpVPlace p {
+    text-decoration: underline;
+    margin: 0;
+}
+#jumpVINP {
+    width: 50px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#jumpVPlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 80px;
+}
+
+
+
+#jumpDPlace p {
+    text-decoration: underline;
+    margin: 0;
+}
+#jumpDINP {
+    width: 50px;
+    border: 0;
+    height: 40px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#jumpDPlace {
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 10px;
+    width: 80px;
+}
+
+footer {
+    display: flex;
+}
+
+#FooterLeftSide {
+    display: flex;
+}
+
+.plusANDminus {
+    display: flex;
+    flex-direction: column;
+}
+.plusANDminus button{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-width: 1px;
+    border-style: groove;
+    border-bottom: 0;
+    border-top: 0;
+    border-width: 2px;
+    border-left: 0;
+}
+
+.buttonPLACE button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right:3px ;
+
+}
+
+.MainCOl {
+    display: flex;
+    gap: 15px;
+}
+
+#HowSkillsPLace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 10px;
+    border-style: groove;
+
+
+}
+.nameP {
+    border-style: groove;
+    border-width: 4px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

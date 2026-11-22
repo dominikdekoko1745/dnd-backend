@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(73, 70, 64);
+    transition: background-color 0.5s ease-in-out ;
+    color: white;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#lightDark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+button {
+    width: 150px;
+    height: 80px;
+    border-style: double;
+    border-radius: 10px;
+    transition: 1s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+
+body.newBG{
+    background-color: rgb(179, 164, 137);
+    box-shadow: -3px 10px 50px  rgb(0, 0, 0);
+}
+
+#notPass {
+    display: none;
+    color: white;
+}
+#notPass.another {
+    color:  black;
+}
+#notGood {
+    display: none;
+    color: white;
+}
+#notGood.another{
+    color: black;
+}
+
+#box {
+    position: relative;
+    background-color: rgb(68, 66, 63);
+    border-radius: 10px;
+    border-style: groove;
+    border-color: rgb(151, 6, 6);
+    width: 500px;
+    box-shadow: -3px 10px 50px  rgb(230, 226, 226);
+}
+#box.HaNew {
+    background-color: rgb(179, 164, 137);
+    box-shadow: -3px 10px 50px  rgb(0, 0, 0);
+}
+
+#h1text {
+    color: white;
+    -webkit-text-stroke: 1px;    
+    margin-left: 9px;
+    font-size: 40px;
+}
+#h1text.another {
+    color: black;
+}
+.newMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
