@@ -46,13 +46,42 @@ logBtn.addEventListener("click", function () {
 
 
 async function logIn (){
-    const response = await fetch("api/users/login")
-        
         try {
+
+
+            const response = await fetch("api/users/login", {
+                method : "POST",
+                headers : {"Content-Type" : "application/json"},
+                body : JSON.stringify({
+                    username: inp1.value,
+                    password: inp2.value
+                })
+
+
+            })
+
             if (!response.ok){
                 throw new Error("Ошибка бэкенда")
             }
+
             const users = await response.json()
+
+            if (inp1.value !== "" && inp2.value !== "" && inp1.value === users.login && inp2.value === users.password) {
+                window.location.href = "lobby.html"
+                err.style.display = "none"
+            }
+            else {
+
+                err.style.display = "flex"
+                inp1.value = "";
+                inp2.value = "";
+                throw new Error("ERROR")
+            }
+
+
+
+
+
         } catch (error) {
             console.log(error)
         }
@@ -60,17 +89,10 @@ async function logIn (){
 }
 
 // кнопка проверки входа 
-final.addEventListener("click", function () {
-    final.disabled = true
-    if (inp1.value != "" && inp2.value != "" && inp1.value == users.login && inp2.value == users.password) {
-        window.location.href = "lobby.html"
-        err.style.display = "none"
-    }
-    else {
-        err.style.display = "flex"
-        inp1.value = "";
-        inp2.value = "";
-    }
+final.addEventListener("click", async function () {
+    await logIn()
+
+
 })
 
 // кнопка для измены фона
