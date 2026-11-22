@@ -34,13 +34,50 @@ let myImg = document.getElementById("img1")
 // бокс внутри боди
 let newBox = document.getElementById("box")
 
+async function singUP(){
+    try {
+        const response = await fetch("api/users/register",{
+            method: "POST",
+            headers : {"Content-Type" : "application/json"
+            },
+            body : JSON.stringify({
+                username: logInput.value,
+                password: passInput.value
+            })
+
+        })
+
+
+
+        if (!response.ok){
+            throw new Error("Ошибка бэка")
+        }
+        console.log("Регистрация успешна")
+        window.location.href = "login.html"
+
+        return true;
+
+    } catch (error){
+        console.log(error)
+        return false;
+    } finally {
+        console.log("Кодд завершен!")
+    }
+
+}
+
 
 // проверка регистрации что все заполнено или пароль похож
-finalBtn.addEventListener("click", function () {
+finalBtn.addEventListener("click", async function (event) {
+    event.preventDefault();
     if (logInput.value !== "" && passInput.value !== "" && returnInput.value !== "" && passInput.value === returnInput.value) {
-        window.location.href = "login.html"
+        await singUP()
         error1.style.display = "none"
         error2.style.display = "none"
+    } else if (passInput.value === "" || returnInput.value === ""){
+        error1.style.display = "none"
+        error2.style.display = "none"
+        error1.style.display = "flex"
     } else if (passInput.value !== returnInput.value) {
         error1.style.display = "none"
         error2.style.display = "none"
@@ -49,10 +86,7 @@ finalBtn.addEventListener("click", function () {
         error1.style.display = "none"
         error2.style.display = "none"
         error1.style.display = "flex"
-
-        
     }
-
 })
 
 
@@ -81,8 +115,4 @@ backBtn.addEventListener("click" , function () {
 
     }
 })
-
-
-
-
 

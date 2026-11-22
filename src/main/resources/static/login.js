@@ -28,9 +28,7 @@ let text1 = document.getElementById("text")
 let err = document.getElementById("error")
 err.classList.add("text2")
 
-// тестовый логин и пароль
-let testLOG = "K";
-let testPASS = "123";
+
 
 // кнопка для изменения фона 
 let backBtn = document.getElementById("background")
@@ -45,10 +43,26 @@ logBtn.addEventListener("click", function () {
 });
 
 
+
+
+async function logIn (){
+    const response = await fetch("api/users/login")
+        
+        try {
+            if (!response.ok){
+                throw new Error("Ошибка бэкенда")
+            }
+            const users = await response.json()
+        } catch (error) {
+            console.log(error)
+        }
+
+}
+
 // кнопка проверки входа 
 final.addEventListener("click", function () {
-
-    if (inp1.value != "" && inp2.value != "" && inp1.value == testLOG && inp2.value == testPASS) {
+    final.disabled = true
+    if (inp1.value != "" && inp2.value != "" && inp1.value == users.login && inp2.value == users.password) {
         window.location.href = "lobby.html"
         err.style.display = "none"
     }
