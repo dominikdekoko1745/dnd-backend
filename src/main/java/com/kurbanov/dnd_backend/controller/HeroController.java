@@ -15,13 +15,12 @@ public class HeroController {
     public HeroController(HeroService heroService) {
         this.heroService = heroService;
     }
-    @GetMapping
-    public List<Hero> getAllHeroes() {
-        return heroService.getListOfHeroes();
+    @GetMapping("/user/{userId}")
+    public List<Hero> getAllHeroes(@PathVariable Long userId) {
+        return heroService.getHeroesByUserId(userId);
     }
     @PostMapping
     public Hero createHero(@RequestBody Hero hero) {
         return heroService.makeHero(hero);
     }
-
 }
