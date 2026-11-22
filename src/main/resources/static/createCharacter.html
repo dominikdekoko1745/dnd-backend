@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D - Create character</title>
+    <link rel="stylesheet" href="createCharacter.css">
+</head>
+
+<body>
+    <header>
+        <div id="namePlace">
+            <div id="firstFloor">
+                <input type="text" placeholder="" id="characterName"></input>
+                <p id="characterNameHH">Имя персонажа</p>
+            </div>
+            <div id="secondFloor">
+                <div>
+                    <input type="text" placeholder="" id="characterStory"></input>
+                    <p id="characterStoryHH">Предыстория</p>
+                </div>
+                <div>
+                    <input type="text" placeholder="" id="characterClass"></input>
+                    <p id="characterClassHH">Класс</p>
+                </div>
+            </div>
+            <div id="thirdFloor">
+                <div>
+                    <input type="text" placeholder="" id="characterRace"></input>
+                    <p id="characterRaceHH">Вид</p>
+                </div>
+                <div>
+                    <input type="text" placeholder="" id="characterSecondClass"></input>
+                    <p id="characterSecondClassHH">Подкласс</p>
+                </div>
+            </div>
+        </div>
+        <div id="lvlPlace">
+            <input type="text" id="characterLVL" maxlength="20" value="1" autocomplete="off" min="1" placeholder="">
+            <p id="characterLVLHH">Уровень</p>
+        </div>
+        <div id="hitPlace"></div>
+    </header>
+    <main>
+
+        <div id="leftSide">
+
+            <div id="characterStatPlace">
+
+                <div id="first">
+                    <div id="ProficiencyBonus">
+                        <h2>Бонус владения</h2>
+                        <div id="InProficiencyBonus">
+                            <input type="text" value="+2">
+                        </div>
+                    </div>
+
+                    <div id="characterStatStrength">
+                        <h2>Сила</h2>
+
+                        <div id="StrengthInputs">
+
+                            <div id="StrengthCircleMain">
+                                <div id="StrengthCircle">
+                                    <h2>+0</h2>
+                                </div>
+                                <p>Модификатор</p>
+                            </div>
+
+                            <div id="StrengthSquerMain">
+                                <div id="StrengthSquer">
+                                    <input type="text" maxlength="2" value="10">
+                                </div>
+                                <p>Значение</p>
+                            </div>
+                        </div>
+
+                        <div id="StrengthSavethrow">
+                            <button id="StrengthSavethrowBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Спасбросок</p>
+                        </div>
+                        <div id="StrengthAthletics">
+                            <button id="StrengthAthleticsBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Атлетика</p>
+                        </div>
+                    </div>
+
+
+
+                    <div id="characterStatDexterity">
+                        <h2>Ловкость</h2>
+                        <div id="DexterityInputs">
+
+                            <div id="DexterityCircleMain">
+                                <div id="DexterityCircle">
+                                    <h2>+0</h2>
+                                </div>
+                                <p>Модификатор</p>
+                            </div>
+
+                            <div id="DexteritySquerMain">
+                                <div id="DexteritySquer">
+                                    <input type="text" maxlength="2" value="10">
+                                </div>
+                                <p>Значение</p>
+                            </div>
+                        </div>
+                        <div id="DexteritySavethrow">
+                            <button id="DexteritySavethrowBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Спасбросок</p>
+                        </div>
+
+                        <div id="DexterityAcrobatic">
+                            <button id="DexterityAthleticsBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Акробатика</p>
+                        </div>
+
+                        <div id="DexteritySleight_of_hand">
+                            <button id="DexteritySleight_of_handBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Ловкость рук</p>
+                        </div>
+
+                        <div id="DexteritySecrecy">
+                            <button id="DexteritySecrecyBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Скрытность</p>
+                        </div>
+                    </div>
+
+
+
+                    <div id="characterStatIntelligence">
+                        <h2>Интеллект</h2>
+                        <div id="IntelligenceInputs">
+
+                            <div id="IntelligenceCircleMain">
+                                <div id="IntelligenceCircle">
+                                    <h2>+0</h2>
+                                </div>
+                                <p>Модификатор</p>
+                            </div>
+
+                            <div id="IntelligenceSquerMain">
+                                <div id="IntelligenceSquer">
+                                    <input type="text" maxlength="2" value="10">
+                                </div>
+                                <p>Значение</p>
+                            </div>
+                        </div>
+                        <div id="IntelligenceSavethrow">
+                            <button id="IntelligenceSavethrowBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Спасбросок</p>
+                        </div>
+
+                        <div id="IntelligencePerception">
+                            <button id="IntelligencePerceptionBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Анализ</p>
+                        </div>
+
+                        <div id="IntelligenceStory">
+                            <button id="IntelligenceStoryBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>История</p>
+                        </div>
+
+                        <div id="IntelligenceMagic">
+                            <button id="IntelligenceMagicBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Магия</p>
+                        </div>
+
+                        <div id="IntelligenceNature">
+                            <button id="IntelligenceNatureBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Природа</p>
+                        </div>
+
+                        <div id="IntelligenceReligion">
+                            <button id="IntelligenceReligionBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Религия</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="second">
+                    <div id="characterStatWisdom">
+                        <h2>Мудрость</h2>
+                        <div id="WisdomInputs">
+
+                            <div id="WisdomCircleMain">
+                                <div id="WisdomCircle">
+                                    <h2>+0</h2>
+                                </div>
+                                <p>Модификатор</p>
+                            </div>
+
+                            <div id="WisdomSquerMain">
+                                <div id="WisdomSquer">
+                                    <input type="text" maxlength="2" value="10">
+                                </div>
+                                <p>Значение</p>
+                            </div>
+                        </div>
+                        <div id="WisdomSavethrow">
+                            <button id="WisdomSavethrowBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Спасбросок</p>
+                        </div>
+
+                        <div id="WisdomPerception">
+                            <button id="WisdomPerceptionBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Восприятие</p>
+                        </div>
+
+                        <div id="WisdomSurvival">
+                            <button id="WisdomSurvivalBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Выживание</p>
+                        </div>
+
+                        <div id="WisdomMedicine">
+                            <button id="WisdomMedicineBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Медицина</p>
+                        </div>
+
+                        <div id="WisdomInsight">
+                            <button id="WisdomInsightBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Проницатель ность</p>
+                        </div>
+
+                        <div id="WisdomAnimal_care">
+                            <button id="WisdomAnimal_careBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Уход за животными</p>
+                        </div>
+                    </div>
+
+                    <div id="characterStatPhysique">
+                        <h2>Телосложений</h2>
+                        <div id="PhysiqueInputs">
+
+                            <div id="PhysiqueCircleMain">
+                                <div id="PhysiqueCircle">
+                                    <h2>+0</h2>
+                                </div>
+                                <p>Модификатор</p>
+                            </div>
+
+                            <div id="PhysiqueSquerMain">
+                                <div id="PhysiqueSquer">
+                                    <input type="text" maxlength="2" value="10">
+                                </div>
+                                <p>Значение</p>
+                            </div>
+                        </div>
+                        <div id="PhysiqueSavethrow">
+                            <button id="PhysiqueSavethrowBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Спасбросок</p>
+                        </div>
+                    </div>
+
+
+                    <div id="characterStatCharisma">
+                        <h2>Харизма</h2>
+                        <div id="CharismaInputs">
+
+                            <div id="CharismaCircleMain">
+                                <div id="CharismaCircle">
+                                    <h2>+0</h2>
+                                </div>
+                                <p>Модификатор</p>
+                            </div>
+
+                            <div id="CharismaSquerMain">
+                                <div id="CharismaSquer">
+                                    <input type="text" maxlength="2" value="10">
+                                </div>
+                                <p>Значение</p>
+                            </div>
+                        </div>
+                        <div id="CharismaSavethrow">
+                            <button id="CharismaSavethrowBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Спасбросок</p>
+                        </div>
+
+                        <div id="CharismaPerformance">
+                            <button id="CharismaPerformanceBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Выступление</p>
+                        </div>
+
+                        <div id="CharismaIntimidation">
+                            <button id="CharismaIntimidationBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Запугивание</p>
+                        </div>
+
+                        <div id="CharismaDeception">
+                            <button id="CharismaDeceptionBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Обман</p>
+                        </div>
+
+                        <div id="CharismaBelief">
+                            <button id="CharismaBeliefBtn"></button>
+                            <input type="text" placeholder="+0">
+                            <p>Убеждение</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="characterEquipment-Skills">
+                <h2>Владения снаряжение и умения</h2>
+                <div id="Armor-Gun">
+                    <div id="armorPlace">
+                        <h3>Доспехи: </h3>
+                        <button></button>
+                        <p>Лёгкое</p>
+                        <button></button>
+                        <p>Средние</p>
+                        <button></button>
+                        <p>Тяжёлые</p>
+                        <button></button>
+                        <p>Щит</p>
+                    </div>
+                    <div id="gunPlace">
+                        <h3>Оружие: </h3>
+                        <button></button>
+                        <p>Простое</p>
+                        <button></button>
+                        <p>Воинское</p>
+                        <button></button>
+                        <p>Другое</p>
+                    </div>
+                </div>
+                <div id="blocknote">
+                    <p>Владение инструментами и языками: </p>
+                    <div>
+                        <input id="blocknote1" type="text" placeholder="Сюда:">
+                        <button id="readyBTN">✓</button>
+                    </div>
+                    <div id="boxList">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="rightSide">
+            <div id="characterInitiative">
+                <div id="initiative">
+                    <p>Инициатива</p>
+                    <input type="text" value="+0">
+                </div>
+                <div id="speed">
+                    <p>Скорость</p>
+                    <input type="text">
+                </div>
+                <div id="perception">
+                    <p>П. восприятие</p>
+                    <input type="text" value="10">
+                </div>
+                <div id="state">
+                    <p>Состояние</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div id="combat-plotsANDweapon">
+                <p>Оружие и боевые заговоры</p>
+                <div id="combat-plotsANDweapon_Box">
+                    <button id="readyBAT">Готовы</button>
+                    <div id="combat-plotsANDweapon_Name">
+                        <p>Название</p>
+                        <input type="text" id="combat-plotsANDweapon_Name_input" placeholder="Сюда:">
+                    </div>
+
+                    <div id="bonus-difficult">
+                        <p>Бонус/Сложность</p>
+                        <input type="text" id="bonus-difficult_input" placeholder="Сюда:">
+                    </div>
+
+                    <div id="damage">
+                        <p>Урон/Вид</p>
+                        <input type="text" id="damage_input" placeholder="Сюда:">
+                    </div>
+
+                    <div id="note">
+                        <p>Заметки</p>
+                        <input type="text" id="note_input" placeholder="Сюда:">
+                    </div>
+                </div>
+                <div id="notePlace">
+                    <div id="combat-plotsANDweapon_Name_note"></div>
+                    <div id="bonus-difficult_note"></div>
+                    <div id="damage_note"></div>
+                    <div id="note_note"></div>
+                </div>
+            </div>
+
+            <div id="skillsANDabilities">
+                <div id="skillsANDabilities_headName">
+                    <p>Умения и способности</p>
+                </div>
+                <div id="skillsANDabilities_input_place">
+                    <input type="text" id="skillsANDabilities_input" placeholder="Сюда:">
+                    <button id="skillsANDabilities_BTN">Готов</button>
+                </div>
+                <div id="skillsANDabilities_notePlace">
+
+                </div>
+            </div>
+
+            <div id="AandSandF">
+
+                <div id="attackANDspell">
+                    <div id="attackANDspell_name">
+                        <p>Атаки и заклинания</p>
+                    </div>
+                    <div id="attackANDspell_INP-BTN">
+                        <input type="text" id="attackANDspell_input" placeholder="Сюда:">
+                        <button id="attackANDspell_BTN">Готов</button>
+                    </div>
+                    <div id="attackANDspell_note">
+
+                    </div>
+                </div>
+
+
+                <div id="features">
+                    <div id="features_name">
+                        <p>Черты</p>
+                    </div>
+                    <div id="features_INP-BTN">
+                        <input type="text" id="features_input" placeholder="Сюда:">
+                        <button id="features_BTN">Готов</button>
+                    </div>
+                    <div id="features_note">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="box1">
+
+        <div id="characterImageMain">
+            <div>
+                <h2>Портрет</h2>
+            </div>
+            <div id="characterImagePlace">
+                <input type="file" id="imageInput" accept="image/*">
+                <img id="characterImage" src="" alt="">
+            </div>
+        </div>
+
+        <div id="AliceAndOrg">
+            <div id="AliceAndOrgfeatures_name">
+                <p>Союзники и организации</p>
+            </div>
+            <div id="AliceAndOrg_INP-BTN">
+                <input type="text" id="AliceAndOrg_input" placeholder="Сюда:">
+                <button id="AliceAndOrg_BTN">Готов</button>
+            </div>
+            <div id="AliceAndOrg_note">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="box2">
+
+        <div id="goal">
+            <div id="goal_name">
+                <p>Цели и задачи</p>
+            </div>
+            <div id="goal_INP-BTN">
+                <input type="text" id="goal_input" placeholder="Сюда:">
+                <button id="goal_BTN">Готов</button>
+            </div>
+            <div id="goal_note">
+
+            </div>
+        </div>
+
+
+        <div>
+            <div id="additional_skills">
+                <div id="additional_skills_name">
+                    <p>Дополнительные способности и умения</p>
+                </div>
+                <div id="additional_skills_INP-BTN">
+                    <input type="text" id="additional_skills_input" placeholder="Сюда:">
+                    <button id="additional_skills_BTN">Готов</button>
+                </div>
+                <div id="additional_skills_note">
+
+                </div>
+            </div>
+
+            <div id="treasures">
+                <div id="treasures_name">
+                    <p>Сокровища</p>
+                </div>
+                <div id="treasures_INP-BTN">
+                    <input type="text" id="treasures_input" placeholder="Сюда:">
+                    <button id="treasures_BTN">Готов</button>
+                </div>
+                <div id="treasures_note">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="box3">
+
+        <div id="firstNote">
+            <div id="firstNote_name">
+                <p>Заметки</p>
+            </div>
+            <div id="firstNote_INP-BTN">
+                <input type="text" id="firstNote_input" placeholder="Сюда:">
+                <button id="firstNote_BTN">Готов</button>
+            </div>
+            <div id="firstNote_note">
+
+            </div>
+        </div>
+
+
+        <div id="secondNote">
+            <div id="secondNote_name">
+                <p>Заметки</p>
+            </div>
+            <div id="secondNote_INP-BTN">
+                <input type="text" id="secondNote_input" placeholder="Сюда:">
+                <button id="secondNote_BTN">Готов</button>
+            </div>
+            <div id="secondNote_note">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="box4">
+
+        <div id="thirdNote">
+            <div id="thirdNote_name">
+                <p>Заметки</p>
+            </div>
+            <div id="thirdNote_INP-BTN">
+                <input type="text" id="thirdNote_input" placeholder="Сюда:">
+                <button id="thirdNote_BTN">Готов</button>
+            </div>
+            <div id="thirdNote_note">
+
+            </div>
+        </div>
+
+
+        <div id="fourNote">
+            <div id="fourNote_name">
+                <p>Заметки</p>
+            </div>
+            <div id="fourNote_INP-BTN">
+                <input type="text" id="fourNote_input" placeholder="Сюда:">
+                <button id="fourNote_BTN">Готов</button>
+            </div>
+            <div id="fourNote_note">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="box5">
+
+        <div id="fiveNote">
+            <div id="fiveNote_name">
+                <p>Заметки</p>
+            </div>
+            <div id="fiveNote_INP-BTN">
+                <input type="text" id="fiveNote_input" placeholder="Сюда:">
+                <button id="fiveNote_BTN">Готов</button>
+            </div>
+            <div id="fiveNote_note">
+
+            </div>
+        </div>
+
+
+        <div id="sixNote">
+            <div id="sixNote_name">
+                <p>Заметки</p>
+            </div>
+            <div id="sixNote_INP-BTN">
+                <input type="text" id="sixNote_input" placeholder="Сюда:">
+                <button id="sixNote_BTN">Готов</button>
+            </div>
+            <div id="sixNote_note">
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="FooterLeftSide">
+            <div id="firstConteiner">
+                    <input type="text" placeholder="" id="characteristicINP"></input>
+                    <p id="characteristicNAME">Характеристика</p>
+                    <div class="firstFL">
+                        <div class="value">
+
+                        </div>
+                        <div>
+                            <p>Заклинательный мод.</p>
+                        </div>
+                    </div>
+
+                    <div class="secondFL">
+                        <div class="value">
+
+                        </div>
+                        <div>
+                            <p>Сложность спасброска</p>
+                        </div>
+                    </div>
+
+                    <div class="thirdFL">
+                        <div class="value">
+
+                        </div>
+                        <div>
+                            <p>Бонус атаки заклинанием</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="secondConteiner">
+                <div class="size-specification">
+                    <div id="sizePlace">
+                        <p>Размер</p>
+                        <input type="text" id="sizeINP">
+                    </div>
+
+
+                    <div id="load-capacityPlace" >
+                        <p>Грузоподъемность</p>
+                        <input type="text" id="load-capacityINP">
+                    </div>
+
+                    <div id="jumpVPlace">
+                        <p>Прыжок В.</p>
+                        <input type="text" id="jumpVINP">
+                    </div>
+
+                    <div id="jumpDPlace">
+                        <p>Прыжок Д.</p>
+                        <input type="text" id="jumpDINP">
+                    </div>
+                </div>
+
+                <div id="HowSkillsPLace">
+                    <p class="nameP">Ячейки заклинаний</p>
+                    <div class="MainCOl">
+                        <div>
+                            <p>Ур. Ячейки</p>
+                            <div class="columns">
+                                <p>1-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <p>2-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <p>3-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Ур. Ячейки</p>
+                            <div class="columns">
+                                <p>4-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <p>5-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <p>6-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <p>Ур. Ячейки</p>
+                            <div class="columns">
+                                <p>7-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <p>8-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <p>9-й</p>
+                                <div class="plusANDminus">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                                <div class="buttonPLACE">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            <div id="FooterLastCOnteiner">-->
+<!--                <div class="Name">-->
+<!--                    <p>Заговоры и подготовленные заклинания</p>-->
+<!--                </div>-->
+<!--                <div class="conspiraciesMainPLace">-->
+<!--                    <div>-->
+
+<!--                    </div>-->
+<!--                    <div>-->
+
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        -->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        <div id="FooterRightSide">
+
+        </div>
+    </footer>
+
+    <script src="createCharacter.js"></script>
+</body>
+
+</html>
