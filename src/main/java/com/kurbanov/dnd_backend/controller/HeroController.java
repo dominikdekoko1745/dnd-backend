@@ -15,7 +15,7 @@ public class HeroController {
     public HeroController(HeroService heroService) {
         this.heroService = heroService;
     }
-    @GetMapping("/user/{userId}")
+    @GetMapping("/users/{userId}")
     public List<Hero> getAllHeroes(@PathVariable Long userId) {
         return heroService.getHeroesByUserId(userId);
     }
@@ -23,7 +23,7 @@ public class HeroController {
     public Hero createHero(@RequestBody Hero hero) {
         return heroService.makeHero(hero);
     }
-    @DeleteMapping("кстати по какому стандарту здесь можно писать api/{id}")
+    @DeleteMapping("/{id}")
     public void deleteHero(@PathVariable Long id) {
         heroService.delete(id);
     }
