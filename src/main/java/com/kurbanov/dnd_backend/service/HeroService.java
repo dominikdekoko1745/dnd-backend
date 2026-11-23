@@ -21,4 +21,8 @@ public class HeroService {
     public List<Hero> getHeroesByUserId(Long userId){
         return heroRepository.findByUserId(userId);
     }
+
+    public void delete(Long id) {
+        heroRepository.deleteById(id);
+    }
 }

@@ -23,4 +23,8 @@ public class HeroController {
     public Hero createHero(@RequestBody Hero hero) {
         return heroService.makeHero(hero);
     }
+    @DeleteMapping("кстати по какому стандарту здесь можно писать api/{id}")
+    public void deleteHero(@PathVariable Long id) {
+        heroService.delete(id);
+    }
 }
