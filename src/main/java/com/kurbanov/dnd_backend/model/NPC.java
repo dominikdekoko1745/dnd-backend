@@ -24,6 +24,7 @@ public class NPC {
     private int proficiencyBonus;
     private int strengh;
     private int dexterity;
+    private int constitution;
     private int intelligence;
     private int charisma;
     private int wisdom;
@@ -37,6 +38,22 @@ public class NPC {
     private String description;
 
     public NPC() {}
+
+    public int getConstitution() {
+        return constitution;
+    }
+
+    public void setConstitution(int constitution) {
+        this.constitution = constitution;
+    }
+
+    public String getAbilitiesActions() {
+        return abilitiesActions;
+    }
+
+    public void setAbilitiesActions(String abilitiesActions) {
+        this.abilitiesActions = abilitiesActions;
+    }
 
     public Long getId() {
         return id;
@@ -204,14 +221,6 @@ public class NPC {
 
     public void setLanguages(String languages) {
         this.languages = languages;
-    }
-
-    public String getAbilities_actions() {
-        return abilitiesActions;
-    }
-
-    public void setAbilities_actions(String abilitiesActions) {
-        this.abilitiesActions = abilitiesActions;
     }
 
     public String getDescription() {
