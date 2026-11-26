@@ -2,6 +2,9 @@ package com.kurbanov.dnd_backend.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 Напоминание себе:
 Этот класс нужен для Персонажей игроков
@@ -16,6 +19,10 @@ public class Hero {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @ElementCollection
+    @CollectionTable(name = "hero_notes", joinColumns = @JoinColumn(name = "hero_id"))
+    private List<Note> notes = new ArrayList<>();
 
     private int posX;
     private int posY;
@@ -39,7 +46,6 @@ public class Hero {
     private int tempHitPoints;
     private int currentHitPoints;
     private int initiative;
-    private String notes;
 
     public Hero(){
     }
@@ -184,20 +190,6 @@ public class Hero {
         this.currentHitPoints = currentHitPoints;
     }
 
-    public int getInitiative() {
-        return initiative;
-    }
-    public void setInitiative(int initiative) {
-        this.initiative = initiative;
-    }
-
-    public String getNotes() {
-        return notes;
-    }
-    public void setNotes(String notes) {
-        this.notes = notes;
-    }
-
     public String getHeroClass() {
         return heroClass;
     }
@@ -219,5 +211,19 @@ public class Hero {
         this.posY = posY;
     }
 
+    public void setNotes(List<Note> notes) {
+        this.notes = notes;
+    }
+    public List<Note> getNotes() {
+        return notes;
+    }
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    public void setInitiative(int initiative) {
+        this.initiative = initiative;
+    }
 }
 

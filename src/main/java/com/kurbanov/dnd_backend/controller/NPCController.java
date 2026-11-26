@@ -14,9 +14,9 @@ public class NPCController {
 
     public NPCController(NPCService npcService) {this.npcService = npcService;}
 
-    @GetMapping
+    @GetMapping("users/{id}")
     public List<NPC> getAllNPCs(@PathVariable Long id) {
-        return npcService.getNPCsById(id);
+        return npcService.getNPCsByUserId(id);
     }
 
     @PostMapping

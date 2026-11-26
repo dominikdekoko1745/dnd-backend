@@ -14,7 +14,7 @@ public class NPCService {
 
     public NPC makeNPC(NPC npc) { return npcRepository.save(npc);}
 
-    public List<NPC> getNPCsById(Long id) { return npcRepository.findByUserId(id);}
+    public List<NPC> getNPCsByUserId(Long id) { return npcRepository.findByUserId(id);}
 
     public void delete(Long id) {
         npcRepository.deleteById(id);

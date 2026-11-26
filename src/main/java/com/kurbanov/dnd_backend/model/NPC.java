@@ -22,7 +22,7 @@ public class NPC {
     private int armorClass;
     private String challengeRating;
     private int proficiencyBonus;
-    private int strengh;
+    private int strength;
     private int dexterity;
     private int constitution;
     private int intelligence;
@@ -135,12 +135,12 @@ public class NPC {
         this.proficiencyBonus = proficiencyBonus;
     }
 
-    public int getStrengh() {
-        return strengh;
+    public int getStrength() {
+        return strength;
     }
 
-    public void setStrengh(int strengh) {
-        this.strengh = strengh;
+    public void setStrength(int strength) {
+        this.strength = strength;
     }
 
     public int getDexterity() {
